@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/top_arrow.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="navbar" id="banners"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link " aria-current="page" href="index.html">首頁</a>
+          </li>
+          <!-- 下拉選單 -->
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              disabled="disabled">
+              產品介紹
+            </a>
+            <ul class="dropdown-menu">
+              <!-- 下拉選單中的子選單 -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="choudao.html" style="color: white;">周到管家</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="" style="color: white;">路邊住家</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">社區住家</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">店面</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">工廠</a></li>
+                </ul>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="iot.html" style="color: white;">物聯網開發</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我們</a>
+          </li>
+        </ul>
+        <a href="question.html" class="btn btn-outline-light question" type="submit">問題回饋</a>
+      </div>
+    </div>
+  </nav>
+  <!-- index banner start -->
+  <button type="button" id="BackTop" class="Top-arrow"><i class="bi bi-capslock-fill"></i></button>
+  <div class="container-fulid">
+    <div class="row m-0">
+      <img src="images/logo_banner2.png" style="width:100vw" class="p-0 banner-img" alt="">
+      <a class="link-position text-center" href="#card"><i class="bi bi-chevron-double-down me-1"></i>往下滑</a>
+    </div>
+  </div>
+  <!-- index banner end -->
+  <!-- choudao start -->
+  <div class="container-fluid" id="card">
+    <div class="row justify-content-evenly">
+      <div class="col col-md-4 mt-1">
+        <!-- card大圖 -->
+        <div class="card-shadow">
+          <div class="card header-card " data-aos="fade-down">
+            <img src="images/choudao.png" class="card-img-top" alt="...">
+            <!-- card文字 -->
+            <div class="card-body text-center">
+              <h3 class="card-title"><b>周到管家</b></h3>
+              <p class="card-text py-2">周到管家是一項遠端遙控的產品<br>不管是快速鐵捲門還是傳統鐵捲<br>
+                門都可以幫您打造更便利的生活</p>
+              <!-- link button -->
+              <a href="choudao.html" class="btn btn-orange">前往周到管家</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4 mt-1">
+        <!-- card大圖 -->
+        <div class="card-shadow">
+          <div class="card header-card" data-aos="fade-down">
+            <img src="images/IOT.png" class="card-img-top" alt="...">
+            <!-- card文字 -->
+            <div class="card-body text-center">
+              <h3 class="card-title"><b>物聯網開發</b></h3>
+              <p class="card-text py-3">物聯網開發是專門打造客製化的產品<br>而您與物聯網的距離由雲恆幫您解決！</p>
+              <!-- link button -->
+              <a href="iot.html" class="btn btn-orange">前往物聯網開發</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video start -->
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">雲&nbsp;恆&nbsp;科&nbsp;技&nbsp;宣&nbsp;傳&nbsp;片</h1>
+        <iframe class="mt-3" width="100%" height="500px"
+          src="https://www.youtube.com/embed/mz64AweWkXA?&autoplay=2&hd=1" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen data-aos="fade-right"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- video end -->
+  <!-- Certification start -->
+  <div class="container-fluid mt-3" style="background-color: #F5D7A1;" data-aos="fade-left">
+    <div class="row justify-content-evenly text-center">
+      <div class="col col-md-3 mt-3">
+        <div class="card header-cards">
+          <img src="images/ncc.png" class="card-img-top certification-img mx-auto" alt="...">
+          <div class="card-body">
+            <h3 class="card-text"><b>NCC認證</b></h3>
+            <p class="card-text">認證號碼：CCAJ22LP4550T7</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 mt-3">
+        <div class="card header-cards">
+          <img src="images/mit.png" class="card-img-top certification-img mx-auto" alt="...">
+          <div class="card-body">
+            <h3 class="card-text"><b>台灣生產製造</b></h3>
+            <p class="card-text">台灣生產製造、品質有保障</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-evenly text-center">
+      <div class="col col-md-4 my-3">
+        <div class="card header-cards">
+          <img src="images/r1.png" class="card-img-top certification-img mx-auto" alt="...">
+          <div class="card-body">
+            <h3 class="card-text"><b>安裝評估</b></h3>
+            <p class="card-text">為了順利地安裝，安裝前雲恆都會先行評估控制器</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4 my-3">
+        <div class="card header-cards">
+          <img src="images/r2.png" class="card-img-top certification-img mx-auto" alt="...">
+          <div class="card-body">
+            <h3 class="card-text"><b>到府安裝</b></h3>
+            <p class="card-text">雲恆都會與您約定好時間，並有專人到府安裝到好</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4 my-3">
+        <div class="card header-cards">
+          <img src="images/r3.png" class="card-img-top certification-img mx-auto" alt="...">
+          <div class="card-body">
+            <h3 class="card-text"><b>一年保固</b></h3>
+            <p class="card-text">安裝後產品皆有一年保固</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Certification end -->
+  <!-- index end start -->
+  <div class="container-fluid" style="background-color: black;">
+    <div class="row mx-5">
+      <div class="col col-md-6 my-5">
+        <img src="images/logo.png" style="width: 100%;height: 150px;" alt="">
+        <div class="row justify-content-start ms-3 mt-2">
+          <div class="col col-md-1">
+            <a href="https://www.facebook.com/EternalCloudTech" target="_blank" class="certification-link-fb"><i
+                class="bi bi-facebook"></i></a>
+          </div>
+          <div class="col col-md-1">
+            <a href="https://lin.ee/IppIcLp" target="_blank" class="certification-link-line"><i
+                class="bi bi-line"></i></a>
+          </div>
+          <div class="col col-md-1">
+            <a href="mailto:eternacloudtech@gmail.com" target="_blank" class="certification-link-envelope"><i
+                class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-6 my-auto">
+        <div class="row flex-column ms-5">
+          <div class="col ">
+            <h5 class="text-white">聯絡我們</h5>
+          </div>
+          <div class="col mt-3">
+            <h5 class="text-white">電話：0902110962</h5>
+          </div>
+          <div class="col mt-3">
+            <h5 class="text-white">Facebook：雲恆科技有限公司</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- index end end -->
+  <footer>
+    <h6 class="text-center text-white footer">
+      版權&nbsp;&copy;&nbsp;2023&nbsp;&nbsp;-&nbsp;&nbsp;eternalcloudtech雲恆科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href="Privacy.html" class="text-decoration-none text-white">服務條款</a></h6>
+  </footer>
+</body>
+
+</html>

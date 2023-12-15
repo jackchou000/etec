@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700&family=Heebo:wght@300;400;600;700&family=Noto+Sans+TC:wght@400;600;700;800&display=swap');
+
+
+
+@font-face {
+  font-family: "Race Sport";
+  src: url("font/Race Sport.ttf") format('truetype');
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  /* font-family: 'Heebo', 'Noto Sans TC', sans-serif; */
+  font-family: 'Inter', sans-serif;
+}
+
+/* body {
+  font-family: 'Heebo', 'Noto Sans TC', sans-serif;
+} */
+/* nav固定在上邊 */
+/* nav{
+  position: sticky !important;
+  top:0 !important;
+  z-index: 99 !important;
+} */
+/* 問題回饋按鈕 */
+.btn.question:hover {
+  color: black;
+  background-color: #F5D7A1;
+  border-color: #F5D7A1;
+}
+
+/* 下拉選單旁的按鈕圖示 */
+a.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+/* 圖片大小 */
+#banners {
+  height: 50px;
+  width: 165px;
+}
+
+nav {
+  background-color: black;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: white;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+/* 子選單的按鈕圖示 */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #0a1821;
+}
+
+/* 子選單hover */
+.dropdown-item:focus,
+.dropdown-item:hover {
+  border-radius: 100px;
+  background-color: #F5D7A1;
+  color: black !important;
+  animation: submenu .5s ease infinite;
+
+}
+
+@keyframes submenu {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 子選單的位置 */
+.dropdown-submenu>.dropdown-menu {
+  top: 0%;
+  left: 100%;
+  margin-top: -6px;
+}
+
+@media screen and (max-width:991px) {
+  .dropdown-submenu>.dropdown-menu {
+    top: 0%;
+    left: 100%;
+    margin-top: 0px;
+  }
+}
+
+/* index start */
+.Top-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 1;
+  color: white;
+  background: #000;
+  cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 99;
+  display: none;
+}
+
+.Top-arrow:hover {
+  background-color: coral;
+  color: #000;
+  animation: Top-arrow 1s;
+}
+
+@keyframes Top-arrow {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toTop-arrow::before,
+.toTop-arrow::after {
+  width: 18px;
+  height: 5px;
+  border-radius: 3px;
+  color: white;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+
+.toTop-arrow:focus {
+  outline: none;
+}
+
+/* banner start*/
+.banner-img {
+  animation: banner-img 1s;
+}
+
+@keyframes banner-img {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.link-position {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  list-style: none;
+  margin-top: -12vh;
+  animation: down .5s ease infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* banner end */
+/* card start */
+.card-shadow {
+  transform: scaleX(1);
+  transition: all 0.6s;
+}
+
+.card-shadow:hover {
+  transform: scaleX(1.05);
+  box-shadow: 4px 4px 7px rgba(100, 83, 83, 0.7), -4px -4px 7px rgba(100, 83, 83, 0.7), 4px -4px 7px rgba(100, 83, 83, 0.7), -4px 4px 7px rgba(100, 83, 83, 0.7);
+  padding: 0px;
+  z-index: 1;
+}
+
+.header-card {
+  border: 0px;
+}
+
+.btn-orange {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #000 !important;
+  outline: 2px solid coral;
+  background-color: #FFF;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color .5s;
+  border: 0px;
+}
+
+.btn-orange:hover {
+  color: #FFF !important;
+}
+
+.btn-orange:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 200%;
+  height: 100%;
+  background-color: coral;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  z-index: -1;
+  transition: transform .5s;
+  border: 0px;
+}
+
+.btn-orange:hover:before {
+  transform: scaleX(1) skewX(35deg) !important;
+}
+
+.header-cards {
+  background-color: transparent;
+  border: 0;
+}
+
+/* card end */
+/* certification start */
+.certification-img {
+  width: 131px;
+  height: 131px;
+}
+
+.certification-link-fb {
+  color: #ddd;
+  font-size: 24px;
+}
+
+.certification-link-fb:hover {
+  color: #293e84;
+}
+
+.certification-link-line {
+  color: #ddd;
+  font-size: 24px;
+}
+
+.certification-link-line:hover {
+  color: #43ba49;
+}
+
+.certification-link-envelope {
+  color: #ddd;
+  font-size: 24px;
+}
+
+.certification-link-envelope:hover {
+  color: #ea4335;
+  font-size: 24px;
+}
+
+/* certification end */
+/* privacy start */
+.privacy {
+  line-height: 20px;
+}
+
+/* privacy end */
+/* choudao start */
+.line {
+  width: 500px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* 第二個container */
+.choudao-hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width:747px) {
+  .choudao-hidden {
+    overflow: auto;
+    height: auto !important;
+  }
+}
+/* 第五個container 圖的文字 */
+.choudao-border {
+  width: 250px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50px;
+  line-height: 40px;
+  letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
+}
+/* 最後圖的翻轉 */
+.change-wrap {
+  width: 100vw;
+  height: 360px;
+  perspective: 1000;
+  padding: 0px;
+
+  &:hover .change {
+    transform: rotateY(-180deg);
+  }
+
+  .change,
+  .front,
+  .back {
+    width: 100vw;
+    height: 360px;
+  }
+
+  .change {
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1.5s;
+    position: relative;
+  }
+
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    z-index: 2;
+  }
+
+  .back {
+    transform: rotateY(180deg)
+  }
+}
+
+.change-wrap:hover .change {
+  transform: rotateY(-180deg);
+}
+
+.change {
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg)
+}
+
+/* chaudao end */
+/* iot start */
+/* 大圖banner */
+.banner-iot {
+  height: 300px;
+  width: 100vw;
+  background: url("../images/Blockchain\ Oracle\ Solutions\ -\ 3D\ Illustration.jpg") repeat-x;
+  background-size: contain;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  width: 450px;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top: 20%;
+  left: 35%;
+}
+/* 第一個container */
+.picture-title {
+  position: relative;
+}
+
+.picture-title-cloud {
+  position: relative;
+}
+
+.picture-text {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top: 73.5%;
+  left: 12%;
+}
+
+.picture-text-cloud {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top: 74%;
+  left: 12%;
+}
+/* 第一個container */
+.large {
+  transform: scale(1);
+  transition: all 0.6s;
+}
+
+.large:hover {
+  transform: scale(1.1);
+  padding: 0px;
+  z-index: 1;
+}
+/* app */
+.app-img {
+  width: 100px;
+  height: 100px;
+}
+
+.ios-img {
+  width: 140px;
+  height: 100px;
+}
+/* cloud */
+.aws-img {
+  width: 120px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.firebase-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+}
+/* form表單 */
+.form-line{
+  width: 300px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px 0px;
+}
+.form-bg{
+  background: url("../images/Premium\ Photo\ _\ Abstract\ futuristic\ with\ glowing\ neon\ light\ and\ grid\ line\ pattern\ background_\ technology\ style.jpg");
+  background-size: contain;
+}
+/* iot end */
+/* about start */
+/* banner */
+.banner-about{
+  position: relative;
+  height: 200px;
+  width: 100vw;
+  background: url("../images/Fondo\ de\ negocio\ abstracto\ amarillo\ y\ negro\ naranja\ _\ Vector\ Premium.jpg") no-repeat;
+  background-size: cover;
+}
+.banner-p{
+  position:absolute;
+  font-size: 60px;
+  letter-spacing: 2rem;
+  color: white;
+  top: 50%;
+  left: 32%;
+}
+/* header */
+.header{
+  height: 150px;
+  width: 100vw;
+  background: url("../images/header.png") no-repeat center;
+  background-size: contain;
+}
+/* team */
+.team-pic{
+  width: 720px;
+  height: 450px;
+}
+/* motivation */
+.motivation-img{
+  width: 200px;
+  height: 260px;
+}
+.motivation-p{
+  font-size: 24px;
+  font-weight: 700;
+}
+/* about end */
+/* footer start */
+footer {
+  background-color: #38454a;
+  height: 50px;
+  width: 100%;
+}
+
+.footer {
+  line-height: 50px;
+}
+
+/* footer end */

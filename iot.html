@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/top_arrow.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="navbar" id="banners"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon navbar-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link " aria-current="page" href="index.html">首頁</a>
+          </li>
+          <!-- 下拉選單 -->
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              disabled="disabled">
+              產品介紹
+            </a>
+            <ul class="dropdown-menu">
+              <!-- 下拉選單中的子選單 -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="choudao.html" style="color: white;">周到管家</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="" style="color: white;">路邊住家</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">社區住家</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">店面</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="" style="color: white;">工廠</a></li>
+                </ul>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="iot.html" style="color: white;">物聯網開發</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">關於我們</a>
+          </li>
+        </ul>
+        <a href="question.html" class="btn btn-outline-light question" type="submit">問題回饋</a>
+      </div>
+    </div>
+  </nav>
+  <!-- banner start -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="banner-iot">
+        <div class="title">
+          <h2 class="text-center text-white">歡迎來到雲恆物聯網開發</h2><br><br>
+          <h4 class="text-center text-white">一同與雲恆創造美好未來吧！</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner end -->
+  <!-- 第一個container start -->
+  <div class="container-fluid my-5">
+    <div class="row justify-content-evenly">
+      <div class="col col-md-3 p-0 picture-title" data-aos="fade-down" data-aos-duration="1000">
+        <div class="large">
+          <a href="#app" class="text-decoration-none">
+            <img src="images/app.jpg" alt="" class="img-fluid d-block " style="border-radius: 10px;">
+            <h4 class="picture-text text-center text-white">APP開發</h4>
+          </a>
+        </div>
+      </div>
+      <div class="col col-md-3 p-0 picture-title" data-aos="fade-down" data-aos-duration="1500">
+        <div class="large">
+          <a href="#iot">
+            <img src="images/iot.jpg" alt="" class="img-fluid d-block " style="border-radius: 10px;">
+            <h4 class="picture-text text-center text-white">IOT物聯網</h4>
+          </a>
+        </div>
+      </div>
+      <div class="col col-md-3 p-0 picture-title-cloud" data-aos="fade-down" data-aos-duration="2000">
+        <div class="large">
+          <a href="#cloud">
+            <img src="images/cloud.jpg" alt="" class="img-fluid d-block " style="border-radius: 10px;">
+            <h4 class="picture-text-cloud text-center text-white">雲端服務</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 第一個container end -->
+  <!-- app start -->
+  <div class="container-fluid" id="app">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="row justify-content-evenly">
+          <div class="col col-md-4 pt-5">
+            <div class="text-center">
+              <img src="images/flutter.png" alt="" class="app-img">
+            </div>
+            <h3 class="text-center pt-3"><b>FLUTTER</b></h3>
+          </div>
+          <div class="col col-md-4 pt-5">
+            <div class="text-center">
+              <img src="images/swift.jpg" alt="" class="app-img" style="border-radius: 50px;">
+            </div>
+            <h3 class="text-center pt-3"><b>行動推播</b></h3>
+          </div>
+        </div>
+        <div style="background-color: #5ac4f4;border-radius:50px" class="py-3 m-4">
+          <h5 class="text-center"><b>透過Flutter語法開發雙平台APP</b></h5>
+          <h5 class="text-center"><b>有效節省開發成本及加快開發速度</b></h5>
+          <h5 class="text-center"><b>打造出iOS與Android都能使用的程式</b></h5>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="images/iosandroid.png" alt="" class="ios-img">
+          </div>
+          <h3 class="text-center pt-3"><b>ios與Android雙平台開發</b></h3>
+        </div>
+      </div>
+      <div class="col col-md-6 p-5 ps-0">
+        <img src="images/APP_iot.png" alt="" class="img-fluid d-block">
+      </div>
+    </div>
+  </div>
+  <!-- app end -->
+  <!-- iot start -->
+  <div class="container-fluid" id="iot">
+    <div class="row">
+      <div class="col col-md-6 p-5 pe-0">
+        <img src="images/IOT_iot.png" alt="" class="img-fluid d-block">
+      </div>
+      <div class="col col-md-6">
+        <div class="col pt-5">
+          <div class="text-center">
+            <img src="images/Wifi.png" alt="" class="app-img" style="border-radius: 50px;">
+          </div>
+          <h3 class="text-center pt-3"><b>WIFI產品整合應用</b></h3>
+        </div>
+        <div style="background-color: #5ac4f4;border-radius:30px" class="py-3 m-4">
+          <h5 class="text-center"><b>不管是家庭、工廠、辦公室</b></h5>
+          <h5 class="text-center"><b>透過互聯網與裝置的連接生活更加智慧化</b></h5>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="images/smart-home.jpg" alt="" class="app-img">
+          </div>
+          <h3 class="text-center pt-3"><b>智慧家居</b></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- iot end -->
+  <!-- cloud start -->
+  <div class="container-fluid" id="cloud">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="col">
+          <div class="text-center">
+            <img src="images/aws.png" alt="" class="aws-img">
+          </div>
+          <h3 class="text-center pt-3"><b>主機設定部署</b></h3>
+        </div>
+        <div style="background-color: #5ac4f4;border-radius:30px" class="py-3 m-4">
+          <h5 class="text-center"><b>透過雲端服務去存取、備份資料</b></h5>
+          <h5 class="text-center"><b>節省成本以及空間</b></h5>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <img src="images/firebase.jpg" alt="" class="firebase-img">
+          </div>
+          <h3 class="text-center pt-3"><b>資料庫設定建置</b></h3>
+        </div>
+      </div>
+      <div class="col col-md-6 p-5 ps-0">
+        <img src="images/cloud_iot.png" alt="" class="img-fluid d-block">
+      </div>
+    </div>
+  </div>
+  <!-- cloud end -->
+  <!-- form表單 start -->
+  <div class="container-fluid form-bg">
+    <div class="row justify-content-center text-white">
+      <form action=""></form>
+      <div class="col col-md-4 mt-5">
+        <h1 class="mb-4">歡迎與我們洽談</h1>
+        <h5 class="mb-4">讓雲恆與您打造一個美好的未來</h5>
+        <h5 class="mb-4">讓您在未來的道路上優游自得。</h5>
+        <p class="form-line"></p>
+        <h5 class="mb-4">告訴我們您的需求</h5>
+        <h5 class="mb-4">會有專人盡快為您服務</h5>
+        <h5 class="mb-4">並與您開啟一段並肩合作的路程。</h5>
+      </div>
+      <div class="col col-md-4 mt-5">
+        <div class="mb-3">
+          <label for="name" class="form-label">姓名&nbsp;<span style="color:red">*</span></label>
+          <input type="text" class="form-control" id="name" placeholder="王小明">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">電話&nbsp;<span style="color:red">*</span></label>
+          <input type="tel" class="form-control" id="phone" placeholder="0912345678">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">電子信箱&nbsp;<span style="color:red">*</span></label>
+          <input type="email" class="form-control" id="email" placeholder="name@gmail.com">
+        </div>
+        <div>
+          <label class="form-label">需求類型(可複選)&nbsp;<span style="color:red">*</span></label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+          <input class="form-check-input" type="checkbox" id="p1" value="option1">
+          <label class="form-check-label me-3" for="p1">APP開發</label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+          <input class="form-check-input" type="checkbox" id="p2" value="option2">
+          <label class="form-check-label me-3" for="p2">物聯網IOT</label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+          <input class="form-check-input" type="checkbox" id="p3" value="option2">
+          <label class="form-check-label" for="p3">其他</label>
+        </div>
+        <div class="pb-3">
+          <label for="demand" class="form-label">需求說明&nbsp;<span style="color:red">*</span></label>
+          <textarea class="form-control" id="demand" rows="3" placeholder="請說明您的敘述"></textarea>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <!-- form表單 end -->
+  <footer>
+    <h6 class="text-center text-white footer">
+      版權&nbsp;&copy;&nbsp;2023&nbsp;&nbsp;-&nbsp;&nbsp;eternalcloudtech雲恆科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href="Privacy.html" class="text-decoration-none text-white">服務條款</a></h6>
+  </footer>
+</body>
+
+</html>
