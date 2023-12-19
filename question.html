@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Link aos css -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Link google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Link arrow js -->
   <script src="js/top_arrow.js"></script>
-  <title>Document</title>
+  <title>雲恆科技有限公司</title>
 </head>
 
 <body>
@@ -33,7 +40,8 @@
           </li>
           <!-- 下拉選單 -->
           <li class="nav-item dropdown me-3">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" disabled="disabled">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              disabled="disabled">
               產品介紹
             </a>
             <ul class="dropdown-menu">
@@ -41,19 +49,19 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="choudao.html" style="color: white;">周到管家</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="" style="color: white;">路邊住家</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#road" style="color: white;">路邊住家</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">社區住家</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#commulity" style="color: white;">社區住家</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">店面</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#shop" style="color: white;">店面</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">工廠</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#factory" style="color: white;">工廠</a></li>
                 </ul>
               </li>
               <li>
@@ -70,14 +78,117 @@
       </div>
     </div>
   </nav>
-
-
-
+  <button type="button" id="BackTop" class="Top-arrow"><i class="bi bi-capslock-fill"></i></button>
+  <div class="container-fluid question-bg" >
+    <div class="row justify-content-evenly">
+      <div class=" text-center">
+        <p class="question-title my-3 mx-auto">問題回饋</p>
+      </div>
+      <div class="col col-md-4 mt-5" data-aos="fade-left">
+        <p class="question-head">任何問題都可以由此處提問，您的寶貴意見以及回櫃我們都會一一回應以及努力改善！</p>
+      </div>
+      <div class="col col-md-4 mt-5" style="background-color: #fff;border-radius: 10px;" data-aos="fade-right">
+        <form action="" class="p-4">
+          <div class="mb-3">
+            <label for="qestuion-name" class="form-label">姓名&nbsp;<span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="qestuion-name" placeholder="王小明"
+              style="border: 1px solid #000;">
+          </div>
+          <div class="mb-3">
+            <label for="qestuion-phone" class="form-label">電話&nbsp;<span style="color:red">*</span></label>
+            <input type="tel" class="form-control" id="qestuion-phone" placeholder="0912345678"
+              style="border: 1px solid #000;">
+          </div>
+          <div class="mb-3">
+            <label for="qestuion-email" class="form-label">電子信箱&nbsp;<span style="color:red">*</span></label>
+            <input type="email" class="form-control" id="qestuion-email" placeholder="name@gmail.com"
+              style="border: 1px solid #000;">
+          </div>
+          <div class="mb-3">
+            <label for="question" class="form-label">問題回饋&nbsp;<span style="color:red">*</span></label>
+            <textarea class="form-control" id="questioon" rows="5" placeholder="請說明您的敘述"
+              style="border: 1px solid #000;"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-orange" style="font-weight: 700;font-size: 16px;">提交</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid overflow-hidden" style="background-color: #000;">
+    <div class="row" >
+      <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card"
+              style="background-color: transparent !important;border: 1.5px solid #fff;border-radius: 10px;">
+              <div class="card-body mx-auto mt-3">
+                <h5 class="card-title text-white">用戶回饋</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5顆星</h6>
+                <p class="card-text text-white">周到管家真的很好用，方便又快速</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card"
+              style="background-color: transparent !important;border: 1.5px solid #fff;border-radius: 10px;">
+              <div class="card-body mx-auto mt-3">
+                <h5 class="card-title text-white">用戶回饋</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5顆星</h6>
+                <p class="card-text text-white">周到管家讓我再也不用一直帶著一堆遙控器了</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card"
+              style="background-color: transparent !important;border: 1.5px solid #fff;border-radius: 10px;">
+              <div class="card-body mx-auto mt-3">
+                <h5 class="card-title text-white">用戶回饋</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5顆星</h6>
+                <p class="card-text text-white">周到管家便宜，又幫我安裝到好，而且有問題也都第一時間就幫我處理了</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card"
+              style="background-color: transparent !important;border: 1.5px solid #fff;border-radius: 10px;">
+              <div class="card-body mx-auto mt-3">
+                <h5 class="card-title text-white">用戶回饋</h5>
+                <h6 class="card-subtitle mb-2 text-warning">5顆星</h6>
+                <p class="card-text text-white">周到管家真的很好用，方便又快速</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+  
   <footer>
     <h6 class="text-center text-white footer">
       版權&nbsp;&copy;&nbsp;2023&nbsp;&nbsp;-&nbsp;&nbsp;eternalcloudtech雲恆科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;<a
         href="Privacy.html" class="text-decoration-none text-white">服務條款</a></h6>
   </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
 </body>
 
 </html>

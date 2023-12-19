@@ -36,8 +36,8 @@ html {
 body {
   width: 100vw;
   overflow: hidden;
-  /* font-family: 'Heebo', 'Noto Sans TC', sans-serif; */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Heebo', 'Noto Sans TC', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 }
 
 /* body {
@@ -567,15 +567,112 @@ nav {
   height: 450px;
 }
 /* motivation */
+.motivation{
+  background: url("../images/motivation.jpg") repeat center;
+  background-size: cover;
+}
 .motivation-img{
   width: 200px;
   height: 260px;
 }
+.motivation-title{
+  position: relative;
+}
 .motivation-p{
-  font-size: 24px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0,0,0,.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top:13%;
+  left: 12%;
+}
+/* teamwork */
+.teamwork-p{
+  font-size: 22px;
   font-weight: 700;
 }
+/* product */
+.product-title{
+  font-size: 26px;
+  font-weight: 700;
+  color: #AA0909;
+}
+.product-p{
+  font-size: 20px;
+  font-weight: 700;
+}
+/* promise */
+.promise{
+  background:url("../images/services-bg-1.jpg") bottom right;
+  background-size: cover;
+}
 /* about end */
+/* question start */
+/* backfround-attachment 讓背景固定圖片 */
+.question-bg{
+  background: url("../images/EY\ Cybersecurity\ BrandVoice_\ 4\ Ways\ For\ IT\ And\ The\ Board\ To\ Work\ Together\ On\ Cybersecurity.jpg") repeat-x center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.question-title{
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  background-color: #fff;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.question-head{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 10px;
+}
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: transparent;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+/* question end */
 /* footer start */
 footer {
   background-color: #38454a;

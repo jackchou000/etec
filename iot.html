@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Link aos css -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- Link google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Link arrow js -->
   <script src="js/top_arrow.js"></script>
-  <title>Document</title>
+  <title>雲恆科技有限公司</title>
 </head>
 
 <body>
@@ -42,19 +47,19 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="choudao.html" style="color: white;">周到管家</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="" style="color: white;">路邊住家</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#road" style="color: white;">路邊住家</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">社區住家</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#commulity" style="color: white;">社區住家</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">店面</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#shop" style="color: white;">店面</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="" style="color: white;">工廠</a></li>
+                  <li><a class="dropdown-item" href="choudao.html#factory" style="color: white;">工廠</a></li>
                 </ul>
               </li>
               <li>
@@ -71,6 +76,7 @@
       </div>
     </div>
   </nav>
+  <button type="button" id="BackTop" class="Top-arrow"><i class="bi bi-capslock-fill"></i></button>
   <!-- banner start -->
   <div class="container-fluid">
     <div class="row">
@@ -114,7 +120,7 @@
   </div>
   <!-- 第一個container end -->
   <!-- app start -->
-  <div class="container-fluid" id="app">
+  <div class="container-fluid" id="app" data-aos="fade-left">
     <div class="row">
       <div class="col col-md-6">
         <div class="row justify-content-evenly">
@@ -150,7 +156,7 @@
   </div>
   <!-- app end -->
   <!-- iot start -->
-  <div class="container-fluid" id="iot">
+  <div class="container-fluid" id="iot" data-aos="fade-right">
     <div class="row">
       <div class="col col-md-6 p-5 pe-0">
         <img src="images/IOT_iot.png" alt="" class="img-fluid d-block">
@@ -178,7 +184,7 @@
   </div>
   <!-- iot end -->
   <!-- cloud start -->
-  <div class="container-fluid" id="cloud">
+  <div class="container-fluid" id="cloud" data-aos="fade-left">
     <div class="row">
       <div class="col col-md-6">
         <div class="col">
@@ -205,9 +211,8 @@
   </div>
   <!-- cloud end -->
   <!-- form表單 start -->
-  <div class="container-fluid form-bg">
+  <div class="container-fluid form-bg" data-aos="fade-down" data-aos-duration="1000">
     <div class="row justify-content-center text-white">
-      <form action=""></form>
       <div class="col col-md-4 mt-5">
         <h1 class="mb-4">歡迎與我們洽談</h1>
         <h5 class="mb-4">讓雲恆與您打造一個美好的未來</h5>
@@ -218,42 +223,77 @@
         <h5 class="mb-4">並與您開啟一段並肩合作的路程。</h5>
       </div>
       <div class="col col-md-4 mt-5">
-        <div class="mb-3">
-          <label for="name" class="form-label">姓名&nbsp;<span style="color:red">*</span></label>
-          <input type="text" class="form-control" id="name" placeholder="王小明">
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label">電話&nbsp;<span style="color:red">*</span></label>
-          <input type="tel" class="form-control" id="phone" placeholder="0912345678">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">電子信箱&nbsp;<span style="color:red">*</span></label>
-          <input type="email" class="form-control" id="email" placeholder="name@gmail.com">
-        </div>
-        <div>
-          <label class="form-label">需求類型(可複選)&nbsp;<span style="color:red">*</span></label>
-        </div>
-        <div class="form-check form-check-inline mb-3">
-          <input class="form-check-input" type="checkbox" id="p1" value="option1">
-          <label class="form-check-label me-3" for="p1">APP開發</label>
-        </div>
-        <div class="form-check form-check-inline mb-3">
-          <input class="form-check-input" type="checkbox" id="p2" value="option2">
-          <label class="form-check-label me-3" for="p2">物聯網IOT</label>
-        </div>
-        <div class="form-check form-check-inline mb-3">
-          <input class="form-check-input" type="checkbox" id="p3" value="option2">
-          <label class="form-check-label" for="p3">其他</label>
-        </div>
-        <div class="pb-3">
-          <label for="demand" class="form-label">需求說明&nbsp;<span style="color:red">*</span></label>
-          <textarea class="form-control" id="demand" rows="3" placeholder="請說明您的敘述"></textarea>
-        </div>
+        <form action="">
+          <div class="mb-3">
+            <label for="name" class="form-label">姓名&nbsp;<span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="name" placeholder="王小明">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">電話&nbsp;<span style="color:red">*</span></label>
+            <input type="tel" class="form-control" id="phone" placeholder="0912345678">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">電子信箱&nbsp;<span style="color:red">*</span></label>
+            <input type="email" class="form-control" id="email" placeholder="name@gmail.com">
+          </div>
+          <div>
+            <label class="form-label">需求類型(可複選)&nbsp;<span style="color:red">*</span></label>
+          </div>
+          <div class="form-check form-check-inline mb-3">
+            <input class="form-check-input" type="checkbox" id="p1" value="option1">
+            <label class="form-check-label me-3" for="p1">APP開發</label>
+          </div>
+          <div class="form-check form-check-inline mb-3">
+            <input class="form-check-input" type="checkbox" id="p2" value="option2">
+            <label class="form-check-label me-3" for="p2">物聯網IOT</label>
+          </div>
+          <div class="form-check form-check-inline mb-3">
+            <input class="form-check-input" type="checkbox" id="p3" value="option2">
+            <label class="form-check-label" for="p3">其他</label>
+          </div>
+          <div class="pb-3">
+            <label for="demand" class="form-label">需求說明&nbsp;<span style="color:red">*</span></label>
+            <textarea class="form-control" id="demand" rows="3" placeholder="請說明您的敘述"></textarea>
+          </div>
       </div>
       </form>
     </div>
   </div>
   <!-- form表單 end -->
+  <div class="container-fluid" style="background-color: black;">
+    <div class="row mx-5">
+      <div class="col col-md-6 my-5">
+        <img src="images/logo.png" style="width: 100%;height: 150px;" alt="">
+        <div class="row justify-content-start ms-3 mt-2">
+          <div class="col col-md-1">
+            <a href="https://www.facebook.com/EternalCloudTech" target="_blank" class="certification-link-fb"><i
+                class="bi bi-facebook"></i></a>
+          </div>
+          <div class="col col-md-1">
+            <a href="https://lin.ee/IppIcLp" target="_blank" class="certification-link-line"><i
+                class="bi bi-line"></i></a>
+          </div>
+          <div class="col col-md-1">
+            <a href="mailto:eternacloudtech@gmail.com" target="_blank" class="certification-link-envelope"><i
+                class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-6 my-auto">
+        <div class="row flex-column ms-5">
+          <div class="col ">
+            <h5 class="text-white">聯絡我們</h5>
+          </div>
+          <div class="col mt-3">
+            <h5 class="text-white">電話：0902110962</h5>
+          </div>
+          <div class="col mt-3">
+            <h5 class="text-white">Facebook：雲恆科技有限公司</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <h6 class="text-center text-white footer">
       版權&nbsp;&copy;&nbsp;2023&nbsp;&nbsp;-&nbsp;&nbsp;eternalcloudtech雲恆科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;<a
